@@ -128,10 +128,6 @@ RCT_EXPORT_METHOD(authenticate: (NSString *)reason
         case LAErrorTouchIDNotEnrolled:
             errorReason = @"LAErrorTouchIDNotEnrolled";
             break;
-
-        case LAErrorTouchIDLockout:
-            errorReason = @"LAErrorTouchIDLockout";
-            break;
             
         default:
             errorReason = @"RCTTouchIDUnknownError";
